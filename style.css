@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', Times, Impact, 'Arial Narrow Bold';
+    background-color: #ffff;
+    color: black;
+}
+.container a{
+    list-style: none;
+    color: #6f4e37;
+    font-weight: bold;
+}
+header {
+    background-color: #fff;
+    color: #6f4e37;
+    padding: 0.8rem;
+    height: 14vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.container{
+    width: 90%;
+    max-width: 11300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+header nav a{
+    color: #6f4e37;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+header nav a:hover{
+    color: #8b5e3c;
+}
+header nav i{
+    margin-right: 5px;
+    color: #6f4e37;
+}
+
+.carousel{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    margin-top: 3rem;
+    background-image: url("https://6ft9writer.com/wp-content/uploads/2016/12/Coffee-Shop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    animation: slider 20s linear infinite;
+}
+@keyframes slider{
+    0%{
+        background-image: url("https://wl-img-prd.s3-accelerate.amazonaws.com/12fe9bd9-323c-40d7-8378-b32bfee1a92a-h.jpeg");
+        background-size: 100% 100%;
+    }
+    25%{
+        background-image: url("https://6ft9writer.com/wp-content/uploads/2016/12/Coffee-Shop.jpg");
+        background-size: 100% 100%;
+    }
+    50%{
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg");
+        background-size: 100% 100%;
+    }
+    75%{
+        background-image: url("https://img.freepik.com/premium-photo/hand-coffee-hot-green-tea-young-people-love-drink-hot-drinks_24883-1271.jpg");
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: url("https://img.freepik.com/free-photo/coffee-ai-generated_23-2150691619.jpg");
+        background-size: 100% 100%;
+    }
+}
+.carousel-text{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(237, 229, 229, 0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-family: 'poppins', sans-serif;
+    max-width: 70%;
+}
+.carousel-text .h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.carousel-text .p{
+    font-size: 18px;
+    padding-bottom: 2rem;
+}
+.carousel-text .btn{
+    border: none;
+    padding:0 30px;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+.click a{
+    color: #ffff;
+    background-color: peru;
+    font-size:large;
+    margin-top: 3rem;
+    text-decoration: none;
+    gap: 1.5rem;
+    /* color: black;
+    background-color: #7b9486; */
+    border-radius: 10%;
+    border: 7px solid peru;
+    width: 250px;
+    border-radius: 10px;
+}
+.click{
+    margin-bottom: 1rem;
+    text-align: left;
+    /* display: flex; */
+    gap: 20px;
+    
+   
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 270px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(176, 115, 115, 0.1);
+    transition: transform 0.3s;
+    margin-top: 3rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+.card img{
+    height: 60%;
+    width: 70%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.about-us {
+    background-color:#e6d4c8;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 9rem;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .owner-photo {
+    width: 255px;
+    height: 255px;
+    border-radius: 70%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .owner-info {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .owner-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .owner-info p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .about-container h1{
+    font-size: xx-large;
+  }
+  .contact-section{
+    margin-top: 2rem;
+  }
+  .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1%;
+    margin: 1%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+  .contact-section h2{
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+  }
+  .card2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 390px;
+    height: 280px;
+    padding: 5%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(176, 115, 115, 0.1);
+    transition: transform 0.3s;
+    margin-top: 1rem;
+  }
+  .card2 img{
+    height: 60%;
+    width: 60%;
+  }
+  .card2 h3{
+    margin-top: 1rem;
+  }
+  .card2 p{
+    margin-top: 1rem;
+    color: #444;
+    margin-bottom: 0;
+  }
+  .contacting-section{
+    justify-content: center;
+    display: flex;
+    margin-top: 4rem;
+  }
+  .contacting-section h2{
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+  }
+  .call{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    padding: 1%;
+    margin: 1%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+  .card3{
+    width: 100%;
+  }
+  .card3 h3{
+    color: #444;
+  }
+  .card3 i{
+    color: red;
+    width:50%;
+  }
+  footer{
+    background-color:#be7843;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+}
